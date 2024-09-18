@@ -15,10 +15,10 @@
         "webpack": "webpack",
         "webpack-dev-server": "webpack-dev-server",
         "dev": "npm run webpack-dev-server -- --env mode=development",
-        "clean": "npx rimraf dist",
+        "clean": "npx rimraf docs",
         "prebuild": "npm run clean",
         "build": "npm run webpack -- --env mode=production",
-        "start": "http-server dist -o",
+        "start": "http-server docs -o",
         "prepare": "husky install"
     },
     "author": "jkanchelov",
